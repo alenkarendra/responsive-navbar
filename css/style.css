@@ -132,13 +132,18 @@ section{
     .navlist{
         position: absolute;
         top: -800px;
-        left: 0;
-        right: 0;
+        left: 2rem;
+        right: 2rem;
+        width: unset;
         display: flex;
+        /* justify-content: center; */
         flex-direction: column;
-        background: #00c9e0;
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 20px;
+        overflow: hidden;
         transition: all .50s ease;
-        text-align: left;
+        text-align: center; 
     }
     .navlist a{
         color: #fff;
@@ -152,7 +157,7 @@ section{
         color: #00c9e0;
     }
     .navlist.open{
-        top: 100%;
+        top: 65px;
     }
 }
 
